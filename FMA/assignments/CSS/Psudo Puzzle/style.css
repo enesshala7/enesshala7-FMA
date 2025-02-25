@@ -1,0 +1,10 @@
+p{
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace
+}
+p:hover{
+    background-color: blue;
+}
+p:hover::first-letter{
+    font-size: 100px;
+}

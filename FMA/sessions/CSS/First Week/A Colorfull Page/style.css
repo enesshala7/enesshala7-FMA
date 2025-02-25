@@ -1,0 +1,7 @@
+body {
+    background-image: url(Sports.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section {background: rgb(115,121,9);
+    background: linear-gradient(90deg, rgba(115,121,9,1) 35%, rgba(27,255,0,1) 100%);}

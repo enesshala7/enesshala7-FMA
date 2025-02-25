@@ -1,0 +1,12 @@
+#span-1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#span-2 {
+    font-size: 250px;
+    float: left;
+    margin-right: 10px;
+    line-height: 0.7;
+}
+h1 {text-align: center;}
