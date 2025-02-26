@@ -8,5 +8,7 @@
     float: left;
     margin-right: 10px;
     line-height: 0.7;
+    text-decoration: underline red;
+    background-color: gray;
 }
 h1 {text-align: center;}
