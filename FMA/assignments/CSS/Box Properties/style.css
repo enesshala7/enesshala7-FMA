@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    border: 3px solid black;
+    padding: 20px;
+}
+p {
+    margin: 0;
+    padding: 10px;
+}
+img {
+    float: left;
+    margin: 10px 15px 10px 0;
+    border: 3px solid black;
+    transition: border 0.3s ease;
+    width: 200px;
+    height: auto;
+}
+img:hover {
+    border: 3px dashed red;
+}

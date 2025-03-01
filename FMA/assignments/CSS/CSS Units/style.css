@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.section {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.section:nth-child(odd) {
+    background-color: #3d3b3b;
+    color: white;
+}
+
+.section:nth-child(even) {
+    background-color: #f7f4e1;
+    color: black;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.1em;
+    width: 75%;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #8b0000;
+    width: 33%;
+    margin-top: 10px;
+}
