@@ -1,0 +1,55 @@
+.card {
+    position: relative;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.419);
+}
+.card h2 {
+    position: relative;
+    top: -55px;
+    font-size: 30px;
+    font-weight: bold;
+}
+span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.video-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+video {
+    width: 400px;
+    border-radius: 10px;
+}
+.video-container p {
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+.video-container {
+border: solid black;
+border-radius: 7%;
+}
+p {
+    position: relative;
+    top: -20px;
+}
