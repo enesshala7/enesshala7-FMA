@@ -6,10 +6,11 @@
     width: fit-content;
     border-radius: 10px;
     box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.419);
+    height: 40px;
 }
 .card h2 {
     position: relative;
-    top: -55px;
+    top: -60px;
     font-size: 30px;
     font-weight: bold;
 }
@@ -28,8 +29,8 @@ span {
 }
 .video-container {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
     background: white;
     padding: 10px;
     border-radius: 10px;
@@ -51,5 +52,5 @@ border-radius: 7%;
 }
 p {
     position: relative;
-    top: -20px;
+    top: -60px;
 }
