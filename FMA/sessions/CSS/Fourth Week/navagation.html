@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+
+        }
+
+        .card {
+            border: solid;
+            display: flex;
+            flex-direction: column;
+            width: 470px;
+            height: 700px;
+            box-shadow: 10px 10px 5px;
+
+        }
+
+        .card-1 {
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+
+        }
+
+        .card-2 {
+            background-image: url(https://i.etsystatic.com/18227704/r/il/c35704/3271341593/il_570xN.3271341593_30ei.jpg);
+            background-size: cover;
+            display: flex;
+            width: 470px;
+            height: 881px;
+        }
+
+        .sub-div-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid;
+            width: 235px;
+            height: 200px;
+
+
+        }
+
+        .sub-div-2 {
+            display: flex;
+            border: solid;
+            justify-content: center;
+            align-items: center;
+            width: 235px;
+            height: 200px;
+            flex-direction: column;
+        }
+
+        .p1 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+        .span-2 {
+            font-size: 30px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-1">
+            <div class="sub-div-1"><span class="p1">40C</span></div>
+            <div class="sub-div-2"><span class="p1">August</span> <span class="p1">1962</span></div>
+        </div>
+        <div class="card-2">
+            <span class="span-2">1979 Matvel </span>
+            <br>
+            <span class="span-2">Comic Group</span>
+        </div>
+    </div>
+</body>
+
+</html>
