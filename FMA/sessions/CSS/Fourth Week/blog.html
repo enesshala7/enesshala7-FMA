@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .aside {
+            background: #34495e;
+            color: white;
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .aside h1 {
+            text-align: end;
+            font-size: 35px;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .aside p {
+            color: #b0c4de;
+            text-align: end;
+            margin: 0 0 20px 0;
+            font-size: 20px;
+        }
+
+        .aside button {
+            background: none;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .main {
+            flex: 1;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-title {
+            color: #aaa;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 10px;
+        }
+
+        .post {
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .post h2 {
+            font-size: 35px;
+            margin: 0;
+        }
+
+        .credit {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        .badges {
+            display: flex;
+            gap: 5px;
+        }
+
+        .badge {
+            padding: 2px 8px;
+            color: white;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+
+        .css-badge {
+            background: #27ae60;
+            padding: 7px;
+        }
+
+        .html-badge {
+            background: #2980b9;
+            padding: 7px;
+        }
+
+        .js-badge {
+            background: #e74c3c;
+            padding: 7px;
+        }
+
+        .post-content {
+            margin-top: 10px;
+            line-height: 1.6;
+            color: #333;
+            font-size: larger;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border: solid #aaa;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .credit-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        hr {
+            margin-bottom: 20px;
+            color: #aaa;
+        }
+        .blue-text {
+            color: blue;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aside">
+        <h1>A <br> SAMPLE <br> BLOG</h1>
+        <p>Lorem Ipsum dolor</p>
+        <button>LOG IN</button>
+    </div>
+
+    <div class="main">
+        <div class="section-title">PINNED POST</div>
+        <hr>
+        <div class="post">
+            <div class="post-header">
+                <h2>A pinned post</h2>
+                <img src="data:image/jpeg;base64,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"
+                    alt="author avatar" class="avatar">
+            </div>
+            <div class="credit-wrapper">
+                <div class="credit">
+                    By <span class="blue-text">John Doe</span> under
+                    <div class="badges">
+                        <span class="badge css-badge">CSS</span>
+                        <span class="badge html-badge">HTML</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsa, repellendus. Quo fuga distinctio explicabo temporibus consequuntur nostrum aut placeat totam
+                    dolorem excepturi ex molestias, exercitationem, vero nulla at laborum necessitatibus?</p>
+            </div>
+        </div>
+
+        <div class="section-title">RECENT POSTS</div>
+        <hr>
+        <div class="post">
+            <div class="post-header">
+                <h2>A recent post</h2>
+                <img src="data:image/jpeg;base64,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"
+                    alt="author avatar" class="avatar">
+            </div>
+            <div class="credit-wrapper">
+                <div class="credit">
+                    By <span class="blue-text"> Rocky Balboa</span> under
+                    <div class="badges">
+                        <span class="badge js-badge">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aliquam
+                    reprehenderit possimus voluptatum exercitationem.Iure maiores iste tempore voluptatum, id deserunt
+                    sunt assumenda obcaecati officiis repellendus eius excepturi exercitationem unde.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
